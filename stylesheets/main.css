@@ -1,0 +1,70 @@
+body{
+	background: #E6EEF3;
+	font-family:'※※※','ＭＳ Ｐゴシック','ＭＳＰゴシック','MSPゴシック','MS Pゴシック';
+	font-size:16px;
+	line-height:18px;
+}
+U
+{
+        color: #0000FF;
+}
+ 
+ul
+{
+        margin: 1px 1px 1px 30px;
+}
+ 
+TT
+{
+        color: #0000FF;
+        text-decoration:underline;
+}
+	 
+dl dt {
+        margin-top:1em;
+}
+ 
+dl dd {
+        margin-left:2em;
+}
+ 
+.popup {
+        margin-left: 0px;
+        margin-bottom: 1em;
+        background: rgb(239, 255, 239);
+}
+
+/***  NewRes.html  ***/
+.newres-number{
+	color: 0000FF;
+}
+
+.newres-name{
+	color: #228B22;
+}
+
+.newres-line{
+	color: #999999;
+}
+
+.newres-id{
+	color: blue;
+}
+
+/***  Res.html  ***/
+.res-number{
+	color: 0000FF;
+}
+
+.res-name{
+	color: #228B22;
+}
+
+.res-line{
+	color: #999999;
+}
+
+.res-id{
+	color: blue;
+}
+
