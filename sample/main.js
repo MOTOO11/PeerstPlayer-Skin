@@ -1,23 +1,23 @@
 function init() {
         var elm;
  
-        // æ¿ãƒªãƒ³ã‚¯ä½œæˆ
+        // ”ÂƒŠƒ“ƒNì¬
         elm = document.getElementById("boardname");
         if (elm) {
                 var url = "http://jbbs.shitaraba.net/bbs/read.cgi/radio/20184/1388213554/";
                 if (url.match(/(https?:\/\/[\x21-\x3B\x3D\x3F-\x7E]+?\/).*?\/read\.cgi\/(.*?\/.*?\/)/)) {
-                        // THREADURLã‹ã‚‰URLã‚’ç”Ÿæˆ
+                        // THREADURL‚©‚çURL‚ğ¶¬
                         var link = RegExp.$1 + RegExp.$2;
                         elm.href = link;
                 }
         }
  
-        // hæŠœããƒªãƒ³ã‚¯ä½œæˆ
+        // h”²‚«ƒŠƒ“ƒNì¬
         var re = new RegExp('([^h])(ttps?://[\x21-\x3B\x3D\x3F-\x7E]+)', "ig");
         var replace = '$1<a href="h$2">$2</a>';
         document.body.innerHTML = document.body.innerHTML.replace(re, replace);
  
-        // ãƒ¬ã‚¹ãƒãƒƒãƒ—ã‚¢ãƒƒãƒ—å¤‰æ›´
+        // ƒŒƒXƒ|ƒbƒvƒAƒbƒv•ÏX
         elm = document.getElementsByTagName('A');
         for (var cnt=0; cnt<elm.length; cnt++) {
                 var l = elm[cnt].href;
@@ -37,24 +37,24 @@ function removePopup(obj) {
  
 function showPopup(objA, resno) {
         var idPopup = 'popup' + resno;
-        if (document.getElementById(idPopup)) return;   // äºŒé‡è¡¨ç¤ºé˜²æ­¢
+        if (document.getElementById(idPopup)) return;   // “ñd•\¦–h~
  
-        // é ˜åŸŸä½œæˆ
+        // —Ìˆæì¬
         var elm = document.createElement('div');
         elm.className = 'popup';
         elm.id = idPopup;
  
-        // é–‰ã˜ã‚‹
+        // •Â‚¶‚é
         var objClose = document.createElement('a');
         objClose.onclick = new Function("removePopup(this.parentNode);");
         objClose.href = "javascript:void(0);";
-        objClose.innerHTML = "é–‰ã˜ã‚‹";
+        objClose.innerHTML = "•Â‚¶‚é";
         elm.appendChild(objClose);
         elm.appendChild(document.createElement('br'));
  
         var ary = resno.split(',');
         for(var cnt=0; cnt<ary.length; cnt++) {
-                // ã‚¢ãƒ³ã‚«ãƒ¼ç¯„å›²æŒ‡å®š
+                // ƒAƒ“ƒJ[”ÍˆÍw’è
                 var ary2 = ary[cnt].split('-');
                 var from = ary2[0];
                 var to = ary2[1];
@@ -62,7 +62,7 @@ function showPopup(objA, resno) {
                         to = from;
                 }
                 for(var cnt2=from; cnt2<=to; cnt2++) {
-                        // å¼·å¼•ï½—ï½—ï½—
+                        // ‹­ˆø‚—‚—‚—
                         var div1 = document.createElement('div');
                         var div2 = document.createElement('div');
                         div1.innerHTML = document.getElementsByTagName('dt')[resno-1].innerHTML;
