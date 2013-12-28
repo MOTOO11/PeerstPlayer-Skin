@@ -33,3 +33,38 @@ dl dd {
         margin-bottom: 1em;
         background: rgb(239, 255, 239);
 }
+
+/***  NewRes.html  ***/
+.newres-number{
+	color: 0000FF;
+}
+
+.newres-name{
+	color: #228B22;
+}
+
+.newres-line{
+	color: #999999;
+}
+
+.newres-id{
+	color: blue;
+}
+
+/***  Res.html  ***/
+.res-number{
+	color: 0000FF;
+}
+
+.res-name{
+	color: #228B22;
+}
+
+.res-line{
+	color: #999999;
+}
+
+.res-id{
+	color: blue;
+}
+
